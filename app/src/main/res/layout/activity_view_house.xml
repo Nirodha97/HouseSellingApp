@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/typelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="10dp"
+
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+           <com.denzcoskun.imageslider.ImageSlider
+               android:layout_width="match_parent"
+               android:id="@+id/slider"
+               app:auto_cycle="true"
+               app:delay="0"
+               app:placeholder="@drawable/ic_launcher_background"
+               app:error_image="@drawable/ic_launcher_background"
+               app:period="3000"
+               app:corner_radius="5"
+               android:layout_height="match_parent">
+
+           </com.denzcoskun.imageslider.ImageSlider>
+
+
+        </LinearLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:hint="Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:text="Reference No : ">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/refno2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#000000">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:text="Location : ">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#000000">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:text="Price : ">
+
+            </TextView>
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:text="">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:text="Type : ">
+
+            </TextView>
+            <TextView
+                android:id="@+id/type1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:text="">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:text="Description : ">
+
+            </TextView>
+            <TextView
+                android:id="@+id/description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:textColor="#000000"
+                android:text="">
+
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/contactb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:onClick="contact_seller"
+            android:text="Contact Seller">
+
+        </Button>
+
+    </LinearLayout>
+    </ScrollView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            app:menu="@menu/app_bar_menu"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+            android:backgroundTint="@color/colorwhite"
+            android:layout_height="wrap_content"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
+
+
+
+
+</LinearLayout>

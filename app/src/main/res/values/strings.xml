@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">houseapp</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="un">User Name</string>
+    <string name="pw">Password</string>
+    <string name="cpw">Conform Password</string>
+    <string name="title_activity_dashboard">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/android_mobile__2"
+    android:orientation="vertical">
+
+    <!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="1.5"
+        android:background="@drawable/component_5__1"
+        android:text="Switch to Seller"
+        android:onClick="seller"
+        android:textColor="#ffffff"
+        android:textSize="18sp">
+
+    </Button>
+-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:text="BUY AND SELL YOUR HOME NOW"
+        android:textColor="#FB8C00"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/component_6__1"
+        android:text="GET STARTED"
+        android:onClick="dashboard"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp">
+
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:id="@+id/bottomSheetContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile1">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Nirodha Wickramarathna"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#000000">
+    </TextView>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#07FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_phone_24"
+            android:textSize="16sp">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/telephone_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="0719082322"
+            android:textColor="#000000"
+            android:textSize="17sp"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#07FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_email_24"
+            android:textSize="16sp">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/email_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="N@gmail.com"
+            android:textColor="#000000"
+            android:textSize="17sp"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
